@@ -220,7 +220,7 @@ local hum = chr and chr:FindFirstChildWhichIsA("Humanoid")
 nowe = false
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = " سكربت طيران من حسسن";
+	Title = " سكربت طيران من حسين";
 	Text = "تم صنع سكربت من حسين";
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 5;
