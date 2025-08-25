@@ -2,7 +2,17 @@
 -- حقوق: tiktok.com/@hussein_313_113
 -- سكربت Lua: إشعار "جارٍ التحميل" مع أوامر بسيطة
 -- حقوق Roblox أسفل يسار
-
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+    Text = "✅ Hussein Hub تم تشغيل السكربت بنجاح";
+    Color = Color3.fromRGB(0, 255, 0);
+    Font = Enum.Font.SourceSansBold;
+    TextSize = 18;
+})
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Hussein Hub",
+    Text = "⚠️ السكربت لا يدعم جميع المابات (بعضها عنده حماية قوية)",
+    Duration = 6
+})
 
 
 -- إنشاء إطار للواجهة
