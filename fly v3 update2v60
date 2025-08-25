@@ -1,7 +1,23 @@
 -- Hussein Hub - إشعار دخول وخروج اللاعبين
 -- حقوق: tiktok.com/@hussein_313_113
 -- سكربت Lua: إشعار "جارٍ التحميل" مع أوامر بسيطة
+-- حقوق Roblox أسفل يسار
+local ScreenGui = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextLabel")
 
+-- ربط مع واجهة اللاعب
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- إعداد النص
+TextLabel.Parent = ScreenGui
+TextLabel.Text = "حقوق: Roblox @Husseinlraq_313"
+TextLabel.Size = UDim2.new(0, 300, 0, 40)
+TextLabel.Position = UDim2.new(0, 10, 1, -50) -- أسفل يسار
+TextLabel.BackgroundTransparency = 1 -- بدون خلفية
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 0) -- أصفر
+TextLabel.TextScaled = true
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.TextStrokeTransparency = 0.2 -- تحديد للنص
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local PlayerGui = player:WaitForChild("PlayerGui")
